@@ -104,7 +104,6 @@ export default function Chat1() {
                         }`}
                       >
                         <ReactMarkdown
-                          children={message.content}
                           remarkPlugins={[remarkGfm]}
                           components={{
                             code({
@@ -131,13 +130,15 @@ export default function Chat1() {
                               );
                             },
                             ul: ({ children }) => (
-                              <ul className="list-disc ml-4 ">{children}</ul>
+                              <ul className="list-disc ml-4">{children}</ul>
                             ),
                             ol: ({ children }) => (
-                              <li className="list-decimal ml-4">{children}</li>
+                              <ol className="list-decimal ml-4">{children}</ol> // 🔧 ici tu avais mis <li> au lieu de <ol>
                             ),
                           }}
-                        />
+                        >
+                          {message.content}
+                        </ReactMarkdown>
                       </div>
                     </div>
                   ))}
