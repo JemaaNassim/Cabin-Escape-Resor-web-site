@@ -1,6 +1,6 @@
 import { streamText, Message } from "ai";
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
-import { initialMessage } from "@/app/chatbot/lib/data";
+import { initialMessage } from "../../chatbot/lib/data";
 
 const google = createGoogleGenerativeAI({
   apiKey:
