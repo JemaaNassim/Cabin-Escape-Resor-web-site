@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/page.js",
+    "app/layout.js",
+    "app/api/openai/route.js",
+    "app/chatbot/page.js",
+    "app/chatbot/ui/button.js",
+    "app/chatbot/ui/card.js",
+    "app/chatbot/ui/input.js",
+    "app/chatbot/ui/scroll-area.js",
+    "app/api/chat/route.ts",
+    "app/chatbot/lib/utils.js",
+    "app/chatbot/lib/data.js"
+  ],
+  "exclude": ["node_modules"]
+}

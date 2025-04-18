@@ -1,0 +1,10 @@
+[lcl-host]
+realm-apid = 'localhost'
+
+[org]
+apid = 'jemaanassim'
+
+[service]
+apid = 'cabin-escape-resor-web-site'
+category = 'javascript'
+cert-style = 'acme'
